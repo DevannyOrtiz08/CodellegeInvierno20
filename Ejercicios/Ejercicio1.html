@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <title>Ejercicio 1</title>
+        <meta charset="UTF-8">
+    </head>
+    <!--Le agregé un style-->
+    <style>
+        body{
+            background-color: rgb(235, 226, 214);
+        }
+        h1{
+            font-size: 40px;
+        }
+        table{
+            width: 35%;
+        }
+        td{
+            width: 20%;
+        }
+        p{
+            text-align: right;
+        }
+        input{
+            color: blue;
+        }
+        textarea{
+            color: blue;
+        }
+    </style>
+    <body>
+        <center>
+            <h1>Registration Form</h1>
+            <!--El h1 va antes de poner la tabla y el fotrmato-->
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            <p>User id:</p>
+                        </td>
+                        <td>
+                            <!--Casi a todos los campos de texto les puse que son requeridos-->
+                            <input type="text" name="userid" maxlength="10" required>
+                        </td>  
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Password:</p>
+                        </td>
+                        <td>
+                            <input type="password" name="password" maxlength="10" required>
+                        </td>  
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Name:</p>
+                        </td>
+                        <td>
+                            <input type="text" name="name" maxlength="10" required>
+                        </td>  
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Address:</p>
+                        </td>
+                        <td>
+                            <input type="text" name="address" maxlength="30" required>
+                        </td>  
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Country:</p>
+                        </td>
+                        <td>
+                            <select name="country">
+                                <option value="usa">United States of America</option>
+                                <option value="mexico">Mexico</option>
+                                <option value="china">China</option>
+                                <option value="japan">Japan</option>
+                                <option value="canada">Canada</option>
+                            </select>
+                        </td>  
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>IP Code:</p>
+                        </td>
+                        <td>
+                            <input type="number" name="ipcode" maxlength="10" required>
+                        </td>  
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>E-mail:</p>
+                        </td>
+                        <td>
+                            <input type="email" name="email" maxlength="30">
+                        </td>  
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Sex:</p> 
+                        </td>
+                        <td>
+                            <input type="radio" id="male" name="gender" value="male" required>Male
+                            <input type="radio" id="male" name="gender" value="female" required>Female
+                            <input type="radio" id="male" name="gender" value="other" required>Other
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Language:</p>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="vehicle1" value="english" required>English
+                            <input type="checkbox" name="vehicle1" value="nonenglish" required>Non English
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>About:</p> 
+                        </td>
+                        <td>
+                            <textarea name="about" rows="5" cols="22" maxlength="200"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <button type="submit" name="Submit">Submit</button>
+                        </td>
+                    </tr>
+                </table>>
+            </form>
+        </center>
+    </body>
+</html>
